@@ -13,13 +13,6 @@
   "background": {
     "scripts": ["src/inject/inject.js"]
   },
-  // "content_scripts": [
-  //   {
-  //     "matches": ["http://*/*", "https://*/*"],
-  //     "js": ["src/inject/payload.js","src/inject/inject.js"],
-  //     "run_at": "document_end"
-  //   }
-  // ],
   "permissions": [
     "https://mandrillapp.com/api/1.0/messages/send.json",
     "<all_urls>",
